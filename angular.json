@@ -31,20 +31,20 @@
           "configurations": {
             "fr": {
               "aot": true,
-              "outputPath": "dist/under-construction-fr/",
+              "outputPath": "dist/fr",
               "i18nFile": "src/locales/messages.fr.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "fr",
               "baseHref": "/fr",
               "i18nMissingTranslation": "error"
             },
-            "en": {
+            "ar": {
               "aot": true,
-              "outputPath": "dist/under-construction-en/",
-              "i18nFile": "src/locales/messages.xlf",
+              "outputPath": "dist/ar",
+              "i18nFile": "src/locales/messages.ar.xlf",
               "i18nFormat": "xlf",
-              "i18nLocale": "en",
-              "baseHref": "/en",
+              "i18nLocale": "ar",
+              "baseHref": "/ar",
               "i18nMissingTranslation": "error"
             },
             "production": {
@@ -62,6 +62,13 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "aot": true,
+              "outputPath": "dist/en",
+              "i18nFile": "src/locales/messages.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en",
+              "baseHref": "/en",
+              "i18nMissingTranslation": "error",
               "budgets": [
                 {
                   "type": "initial",
@@ -89,8 +96,8 @@
             "fr": {
               "browserTarget": "appsGlobalisation:build:fr"
             },
-            "en": {
-              "browserTarget": "appsGlobalisation:build:en"
+            "ar": {
+              "browserTarget": "appsGlobalisation:build:ar"
             }
           }
         },

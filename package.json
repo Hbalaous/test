@@ -4,15 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:fr": "ng serve --configuration=fr",
-    "start:en": "ng serve --configuration=en",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "int:extract": "ng xi18n"
-   },
-  
+    "int:extract": "ng xi18n",
+    "build:i18n": "ng run appsGlobalisation:build:fr && ng run appsGlobalisation:build:ar && ng run appsGlobalisation:build:production"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.0",
